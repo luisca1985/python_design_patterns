@@ -1,53 +1,57 @@
 # concrete course
 class DSA():
 
-	"""Class for Data Structures and Algorithms"""
+    """Class for Data Structures and Algorithms"""
 
-	def Fee(self):
-		self.fee = 8000
+    def Fee(self):
+        self.fee = 8000
 
-	def available_batches(self):
-		self.batches = 5
+    def available_batches(self):
+        self.batches = 5
 
-	def __str__(self):
-		return "DSA"
+    def __str__(self):
+        return "DSA"
 
 # concrete course
+
+
 class SDE():
 
-	"""Class for Software development Engineer"""
+    """Class for Software development Engineer"""
 
-	def Fee(self):
-		self.fee = 10000
+    def Fee(self):
+        self.fee = 10000
 
-	def available_batches(self):
-		self.batches = 4
+    def available_batches(self):
+        self.batches = 4
 
-	def __str__(self):
-		return "SDE"
+    def __str__(self):
+        return "SDE"
 
 # concrete course
+
+
 class STL():
 
-	"""class for Standard Template Library of C++"""
+    """class for Standard Template Library of C++"""
 
-	def Fee(self):
-		self.fee = 5000
+    def Fee(self):
+        self.fee = 5000
 
-	def available_batches(self):
-		self.batches = 7
+    def available_batches(self):
+        self.batches = 7
 
-	def __str__(self):
-		return "STL"
+    def __str__(self):
+        return "STL"
 
 
 # main method
 if __name__ == "__main__":
 
-	sde = SDE() # object for SDE
-	dsa = DSA() # object for DSA
-	stl = STL() # object for STL
+    sde = SDE()  # object for SDE
+    dsa = DSA()  # object for DSA
+    stl = STL()  # object for STL
 
-	print(f'Name of Course: {sde} and its Fee: {sde.fee}')
-	print(f'Name of Course: {stl} and its Fee: {stl.fee}')
-	print(f'Name of Course: {dsa} and its Fee: {dsa.fee}')
+    print(f'Name of Course: {sde} and its Fee: {sde.fee}')
+    print(f'Name of Course: {stl} and its Fee: {stl.fee}')
+    print(f'Name of Course: {dsa} and its Fee: {dsa.fee}')
