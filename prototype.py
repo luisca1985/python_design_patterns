@@ -1,42 +1,103 @@
-# concrete course
-class DSA():
-    """Class for Data Structures and Algorithms"""
+# import the required modules
 
-    def Type(self):
-        return "Data Structures and Algorithms"
-
-    def __str__(self):
-        return "DSA"
+from abc import ABCMeta, abstractmethod
+import copy
 
 
-# concrete course
-class SDE():
-    """Class for Software development Engineer"""
+# class - Courses at GeeksforGeeks
+class Courses_At_GFG(metaclass=ABCMeta):
 
-    def Type(self):
-        return "Software Development Engineer"
+    # constructor
+    def __init__(self):
+        self.id = None
+        self.type = None
 
-    def __str__(self):
-        return "SDE"
+    @abstractmethod
+    def course(self):
+        pass
+
+    def get_type(self):
+        return self.type
+
+    def get_id(self):
+        return self.id
+
+    def set_id(self, sid):
+        self.id = sid
+
+    def clone(self):
+        return copy.copy(self)
+
+# class - DSA course
 
 
-# concrete course
-class STL():
-    """class for Standard Template Library of C++"""
+class DSA(Courses_At_GFG):
+    def __init__(self):
+        super().__init__()
+        self.type = "Data Structures and Algorithms"
 
-    def Type(self):
-        return "Standard Template Library"
+    def course(self):
+        print("Inside DSA::course() method")
 
-    def __str__(self):
-        return "STL"
+# class - SDE Course
 
 
-# main method
-if __name__ == "__main__":
-    sde = SDE()  # object for SDE
-    dsa = DSA()  # object for DSA
-    stl = STL()  # object for STL
+class SDE(Courses_At_GFG):
+    def __init__(self):
+        super().__init__()
+        self.type = "Software Development Engineer"
 
-    print(f'Name of Course: {sde} and its type: {sde.Type()}')
-    print(f'Name of Course: {stl} and its type: {stl.Type()}')
-    print(f'Name of Course: {dsa} and its type: {dsa.Type()}')
+    def course(self):
+        print("Inside SDE::course() method.")
+
+# class - STL Course
+
+
+class STL(Courses_At_GFG):
+    def __init__(self):
+        super().__init__()
+        self.type = "Standard Template Library"
+
+    def course(self):
+        print("Inside STL::course() method.")
+
+# class - Courses At GeeksforGeeks Cache
+
+
+class Courses_At_GFG_Cache:
+
+    # cache to store useful information
+    cache = {}
+
+    @staticmethod
+    def get_course(sid):
+        COURSE = Courses_At_GFG_Cache.cache.get(sid, None)
+        return COURSE.clone()
+
+    @staticmethod
+    def load():
+        sde = SDE()
+        sde.set_id("1")
+        Courses_At_GFG_Cache.cache[sde.get_id()] = sde
+
+        dsa = DSA()
+        dsa.set_id("2")
+        Courses_At_GFG_Cache.cache[dsa.get_id()] = dsa
+
+        stl = STL()
+        stl.set_id("3")
+        Courses_At_GFG_Cache.cache[stl.get_id()] = stl
+
+
+# main function
+if __name__ == '__main__':
+    Courses_At_GFG_Cache.load()
+
+    sde = Courses_At_GFG_Cache.get_course("1")
+    print(sde.get_type())
+
+    dsa = Courses_At_GFG_Cache.get_course("2")
+    print(dsa.get_type())
+
+    stl = Courses_At_GFG_Cache.get_course("3")
+    print(stl.get_type())
