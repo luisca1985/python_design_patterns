@@ -7,5 +7,10 @@ Abstract Factory Method is a Creational Design pattern that allows you to produc
 
 It provides a way to encapsulate a group of individual factories. Basically, here we try to abstract the creation of the objects depending on the logic, business, platform choice, etc.
 
+## Builder Method
+Builder Method is a Creation Design Pattern which aims to “Separate the construction of a complex object from its representation so that the same construction process can create different representations.” It allows you to construct complex objects step by step. Here using the same construction code, we can produce different types and representations of the object easily.
+
+It is basically designed to provide flexibility to the solutions to various object creation problems in object-oriented programming.
+
 ## References
 - [Python Design Patterns](https://www.geeksforgeeks.org/python-design-patterns/)
