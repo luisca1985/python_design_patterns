@@ -12,5 +12,10 @@ Builder Method is a Creation Design Pattern which aims to “Separate the constr
 
 It is basically designed to provide flexibility to the solutions to various object creation problems in object-oriented programming.
 
+## Prototype Method
+Prototype Method is a Creational Design Pattern which aims to reduce the number of classes used for an application. It allows you to copy existing objects independent of the concrete implementation of their classes. Generally, here the object is created by copying a prototypical instance during run-time.
+
+It is highly recommended to use Prototype Method when the object creation is an expensive task in terms of time and usage of resources and already there exists a similar object. This method provides a way to copy the original object and then modify it according to our needs.
+
 ## References
 - [Python Design Patterns](https://www.geeksforgeeks.org/python-design-patterns/)
