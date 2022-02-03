@@ -72,4 +72,4 @@ if __name__ == "__main__":
 	objects.append(Adapter(car, wheels = car.FourWheeler))
 
 	for obj in objects:
-	print("A {0} is a {1} vehicle".format(obj.name, obj.wheels()))
+		print("A {0} is a {1} vehicle".format(obj.name, obj.wheels()))
