@@ -17,5 +17,10 @@ Prototype Method is a Creational Design Pattern which aims to reduce the number 
 
 It is highly recommended to use Prototype Method when the object creation is an expensive task in terms of time and usage of resources and already there exists a similar object. This method provides a way to copy the original object and then modify it according to our needs.
 
+## Singleton Method
+Singleton Method is a type of Creational Design pattern and is one of the simplest design pattern available to us. It is a way to provide one and only one object of a particular type. It involves only one class to create methods and specify the objects. 
+
+Singleton Design Pattern can be understood by a very simple example of Database connectivity. When each object creates a unique Database Connection to the Database, it will highly affect the cost and expenses of the project. So, it is always better to make a single connection rather than making extra irrelevant connections which can be easily done by Singleton Design Pattern.
+
 ## References
 - [Python Design Patterns](https://www.geeksforgeeks.org/python-design-patterns/)
