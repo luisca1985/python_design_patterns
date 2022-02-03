@@ -36,5 +36,10 @@ Adapter method is a Structural Design Pattern which helps us in making the incom
 
 Using this idea, we can integrate the classes that couldn’t be integrated due to interface incompatibility.
 
+### Bridge Method
+Bridge method is a Structural Design Pattern which allows us to separate the Implementation Specific Abstractions and Implementation Independent Abstractions from each other and can be developed considering as the single entities.
+
+Bridge Method is always considered as one of the best methods to organize the class hierarchy.
+
 ## References
 - [Python Design Patterns](https://www.geeksforgeeks.org/python-design-patterns/)
