@@ -1,7 +1,8 @@
 # Double Checked Locking singleton pattern
 
 
-import threading
+from threading import Lock
+from typing import Any
 
 
 class SingletonDoubleChecked(object):
@@ -10,8 +11,8 @@ class SingletonDoubleChecked(object):
     # instance
 
 	# https://docs.python.org/es/dev/library/threading.html#threading.Lock
-    __singleton_lock = threading.Lock()
-    __singleton_instance = None
+    __singleton_lock: Lock = Lock()
+    __singleton_instance: Any = None
 
     # define the classmethod
     @classmethod

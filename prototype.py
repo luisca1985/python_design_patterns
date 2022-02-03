@@ -2,6 +2,7 @@
 
 from abc import ABCMeta, abstractmethod
 import copy
+from typing import Any, Dict
 
 
 # class - Courses at GeeksforGeeks
@@ -67,7 +68,7 @@ class STL(Courses_At_GFG):
 class Courses_At_GFG_Cache:
 
     # cache to store useful information
-    cache = {}
+    cache: Dict[str,Any] = {}
 
     @staticmethod
     def get_course(sid):

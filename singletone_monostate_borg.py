@@ -1,7 +1,10 @@
 # Singleton Borg pattern
+from typing import Dict
+
+
 class Borg:
     # state shared by each instance
-    __shared_state = dict()
+    __shared_state: Dict = dict()
 
     # constructor method
     def __init__(self):
