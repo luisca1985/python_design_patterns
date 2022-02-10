@@ -51,6 +51,11 @@ Decorator Method is a Structural Design Pattern which allows you to dynamically 
 
 It is much easier to implement Decorator Method in Python because of its built-in feature. It is not equivalent to the Inheritance because the new feature is added only to that particular object, not to the entire subclass.
 
+### Facade Method
+
+Facade Method is a Structural Design pattern that provides a simpler unified interface to a more complex system. The word Facade means the face of a building or particularly an outer lying interface of a complex system, consists of several sub-systems. It is an essential part Gang of Four design patterns. It provides an easier way to access methods of the underlying systems by providing a single entry point.
+
+Here, we create a Facade layer that helps in communicating with subsystems easily to the clients.
 
 ## References
 - [Python Design Patterns](https://www.geeksforgeeks.org/python-design-patterns/)
