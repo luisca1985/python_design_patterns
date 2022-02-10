@@ -16,28 +16,36 @@
     - [Proxy Method](#proxy-method)
 
 ## Creational Design Pattern
-Creational patterns provides essential information regarding the Class instantiation or the object instantiation.
+Los patrones creacionales proporcionan información esencial sobre la creación de instancias de clase o la creación de instancias de objetos.
 
-Class Creational Pattern and the Object Creational pattern is the major categorization of the Creational Design Patterns. While class-creation patterns use inheritance effectively in the instantiation process, object-creation patterns use delegation effectively to get the job done.
+El patrón creacional de clases y el patrón creacional de objetos es la categorización principal de los patrones de diseño creacionales.
+
+Mientras que los patrones creacionales de clases usan la herencia de manera efectiva en el proceso de creación de instancias, los patrones creacionales de objetos usan la delegación de manera efectiva para realizar el trabajo.
 
 ### Factory Method
-Factory Method is a Creational Design Pattern that allows an interface or a class to create an object, but lets subclasses decide which class or object to instantiate. Using the Factory method, we have the best ways to create an object. Here, objects are created without exposing the logic to the client, and for creating the new type of object, the client uses the same common interface.
+Factory Method es un patrón de diseño creacional que permite que una interfaz o una clase creen un objeto, pero permite que las subclases decidan qué clase u objeto instanciar. 
+
+Usando el Factory Method, tenemos las mejores formas de crear un objeto. Aquí, los objetos se crean sin exponer la lógica al cliente y, para crear el nuevo tipo de objeto, el cliente utiliza la misma interfaz común.
 
 #### References
 - [Factory Method – Python Design Patterns](https://www.geeksforgeeks.org/factory-method-python-design-patterns/)
 
 ### Abstract Factory Method
-Abstract Factory Method is a Creational Design pattern that allows you to produce the families of related objects without specifying their concrete classes. Using the abstract factory method, we have the easiest ways to produce a similar type of many objects.
+Abstract Factory Method es un patrón de Diseño Creacional que permite producir las familias de objetos relacionados sin especificar sus clases concretas. 
 
-It provides a way to encapsulate a group of individual factories. Basically, here we try to abstract the creation of the objects depending on the logic, business, platform choice, etc.
+Usando el Abstract Factory Method, tenemos la forma más fácil de producir un tipo similar de muchos objetos.
+
+Proporciona una forma de encapsular un grupo de fábricas individuales. Básicamente, aquí tratamos de abstraer la creación de los objetos según la lógica, el negocio, la elección de la plataforma, etc.
 
 #### References
 - [Abstract Factory Method – Python Design Patterns](https://www.geeksforgeeks.org/abstract-factory-method-python-design-patterns/)
 
 ### Builder Method
-Builder Method is a Creation Design Pattern which aims to “Separate the construction of a complex object from its representation so that the same construction process can create different representations.” It allows you to construct complex objects step by step. Here using the same construction code, we can produce different types and representations of the object easily.
+Builder Method es un patrón de diseño creacional que tiene como objetivo "separar la construcción de un objeto complejo de su representación para que el mismo proceso de construcción pueda crear diferentes representaciones". 
 
-It is basically designed to provide flexibility to the solutions to various object creation problems in object-oriented programming.
+Permite construir objetos complejos paso a paso. Aquí, usando el mismo código de construcción, podemos producir fácilmente diferentes tipos y representaciones del objeto.
+
+Básicamente está diseñado para proporcionar flexibilidad a las soluciones a varios problemas de creación de objetos en la programación orientada a objetos.
 
 #### References
 - [Builder Method – Python Design Patterns](https://www.geeksforgeeks.org/builder-method-python-design-patterns/)
@@ -47,48 +55,60 @@ Prototype Method is a Creational Design Pattern which aims to reduce the number 
 
 It is highly recommended to use Prototype Method when the object creation is an expensive task in terms of time and usage of resources and already there exists a similar object. This method provides a way to copy the original object and then modify it according to our needs.
 
+Prototype Method es un patrón de diseño creacional que tiene como objetivo reducir el número de clases utilizadas para una aplicación. Le permite copiar objetos existentes independientemente de la implementación concreta de sus clases. Generalmente, aquí el objeto se crea copiando una instancia prototípica durante el tiempo de ejecución.
+
+Se recomienda utilizar el Prototype Method cuando la creación del objeto es una tarea costosa en términos de tiempo y uso de recursos y ya existe un objeto similar. Este método proporciona una forma de copiar el objeto original y luego modificarlo según nuestras necesidades.
+
 #### References
 - [Prototype Method – Python Design Patterns](https://www.geeksforgeeks.org/prototype-method-python-design-patterns/)
 
 ### Singleton Method
-Singleton Method is a type of Creational Design pattern and is one of the simplest design pattern available to us. It is a way to provide one and only one object of a particular type. It involves only one class to create methods and specify the objects. 
+El Singleton Method es un tipo de patrón de Diseño Creacional y es uno de los patrones de diseño más simples disponibles para nosotros. Es una forma de proporcionar uno y solo un objeto de un tipo particular. Se trata de una sola clase para crear métodos y especificar los objetos.
 
-Singleton Design Pattern can be understood by a very simple example of Database connectivity. When each object creates a unique Database Connection to the Database, it will highly affect the cost and expenses of the project. So, it is always better to make a single connection rather than making extra irrelevant connections which can be easily done by Singleton Design Pattern.
+El patrón de diseño Singleton se puede entender con un ejemplo muy simple de conectividad de base de datos. Cuando cada objeto crea una conexión de base de datos única a la base de datos, afectará en gran medida el costo y los gastos del proyecto. Por lo tanto, siempre es mejor hacer una sola conexión en lugar de hacer conexiones adicionales irrelevantes, lo que se puede hacer fácilmente con Singleton Design Pattern.
 
 #### References
 - [Singleton Method – Python Design Patterns](https://www.geeksforgeeks.org/singleton-method-python-design-patterns/)
 
 ## Structural Design Patterns
-Structural design patterns are about organizing different classes and objects to form larger structures and provide new functionality while keeping these structures flexible and efficient. Mostly they use Inheritance to compose all the interfaces. It also identifies the relationships which led to the simplification of the structure.
+Los Structural design patterns consisten en organizar diferentes clases y objetos para formar estructuras más grandes y brindar nuevas funcionalidades, manteniendo estas estructuras flexibles y eficientes. En su mayoría, usan Herencia para componer todas las interfaces. 
+
+También identifica las relaciones que llevaron a la simplificación de la estructura.
 
 ### Adapter Method
 Adapter method is a Structural Design Pattern which helps us in making the incompatible objects adaptable to each other. The Adapter method is one of the easiest methods to understand because we have a lot of real-life examples that show the analogy with it. The main purpose of this method is to create a bridge between two incompatible interfaces. This method provides a different interface for a class. We can more easily understand the concept by thinking about the Cable Adapter that allows us to charge a phone somewhere that has outlets in different shapes.
 
 Using this idea, we can integrate the classes that couldn’t be integrated due to interface incompatibility.
 
+El Adapter Method es un patrón de diseño estructural que nos ayuda a hacer que los objetos incompatibles se adapten entre sí. El método Adapter es uno de los métodos más fáciles de entender porque tenemos muchos ejemplos de la vida real que muestran la analogía con él. El objetivo principal de este método es crear un puente entre dos interfaces incompatibles. 
+
+Este método proporciona una interfaz diferente para una clase. Podemos entender más fácilmente el concepto si pensamos en el Cable Adaptador que nos permite cargar un teléfono en algún lugar que tenga enchufes de diferentes formas.
+
+Usando esta idea, podemos integrar las clases que no pudieron integrarse debido a la incompatibilidad de la interfaz.
+
 #### References
 - [Adapter Method – Python Design Patterns](https://www.geeksforgeeks.org/adapter-method-python-design-patterns/)
 
 ### Bridge Method
-Bridge method is a Structural Design Pattern which allows us to separate the Implementation Specific Abstractions and Implementation Independent Abstractions from each other and can be developed considering as the single entities.
+El Bridge Method es un patrón de diseño estructural que nos permite separar las abstracciones específicas de la implementación y las abstracciones independientes de la implementación entre sí y se pueden desarrollar considerando como entidades únicas.
 
-Bridge Method is always considered as one of the best methods to organize the class hierarchy.
+Bridge Method siempre se considera como uno de los mejores métodos para organizar la jerarquía de clases.
 
 #### References
 - [Bridge Method – Python Design Patterns](https://www.geeksforgeeks.org/bridge-method-python-design-patterns/)
 
 ### Composite Method
-Composite Method is a Structural Design Pattern which describes a group of objects that is treated the same way as a single instance of the same type of the objects. The purpose of the Composite Method is to Compose objects into Tree type structures to represent the whole-partial hierarchies.
+El Composite Method es un patrón de diseño estructural que describe un grupo de objetos que se tratan de la misma manera que una sola instancia del mismo tipo de objetos. El propósito del método compuesto es componer objetos en estructuras de tipo árbol para representar las jerarquías total-parcial.
 
-One of the main advantages of using the Composite Method is that first, it allows you to compose the objects into the Tree Structure and then work with these structures as an individual object or an entity.
+Una de las principales ventajas de usar el Composite Method es que, en primer lugar, le permite componer los objetos en la estructura de árbol y luego trabajar con estas estructuras como un objeto individual o una entidad.
 
 #### References
 - [Composite Method – Python Design Patterns](https://www.geeksforgeeks.org/composite-method-python-design-patterns/)
 
 ### Decorator Method
-Decorator Method is a Structural Design Pattern which allows you to dynamically attach new behaviors to objects without changing their implementation by placing these objects inside the wrapper objects that contains the behaviors.
+El Decorator Method es un patrón de diseño estructural que le permite adjuntar dinámicamente nuevos comportamientos a los objetos sin cambiar su implementación al colocar estos objetos dentro de los objetos de envoltura que contienen los comportamientos.
 
-It is much easier to implement Decorator Method in Python because of its built-in feature. It is not equivalent to the Inheritance because the new feature is added only to that particular object, not to the entire subclass.
+Es mucho más fácil implementar el Decorator Method en Python debido a su función integrada. No es equivalente a Herencia porque la nueva característica se agrega solo a ese objeto en particular, no a toda la subclase.
 
 #### References
 - [Decorator Method – Python Design Patterns](https://www.geeksforgeeks.org/decorator-method-python-design-patterns/)
@@ -99,15 +119,23 @@ Facade Method is a Structural Design pattern that provides a simpler unified int
 
 Here, we create a Facade layer that helps in communicating with subsystems easily to the clients.
 
+El Facade Method es un patrón de diseño estructural que proporciona una interfaz unificada más simple para un sistema más complejo. La palabra Fachada significa la cara de un edificio o, en particular, una interfaz exterior de un sistema complejo, que consta de varios subsistemas. Es una parte esencial de los patrones de diseño de Gang of Four. 
+
+Proporciona una forma más fácil de acceder a los métodos de los sistemas subyacentes al proporcionar un único punto de entrada.
+
+Aquí, creamos una capa de fachada que ayuda a comunicarse fácilmente con los subsistemas para los clientes.
+
 #### References
 - [Facade Method – Python Design Patterns](https://www.geeksforgeeks.org/facade-method-python-design-patterns/)
 
 ### Proxy Method
-The Proxy method is Structural design pattern that allows you to provide the replacement for an another object. Here, we use different classes to represent the functionalities of another class. The most important part is that here we create an object having original object functionality to provide to the outer world.
+El Proxy Method es un patrón de diseño estructural que le permite proporcionar el reemplazo de otro objeto. 
 
-The meaning of word Proxy is “in place of” or “on behalf of” that directly explains the Proxy Method.
+Se utiliza diferentes clases para representar las funcionalidades de otra clase. La parte más importante es que aquí creamos un objeto que tiene una funcionalidad de objeto original para proporcionar al mundo exterior.
 
-Proxies are also called surrogates, handles, and wrappers. They are closely related in structure, but not purpose, to Adapters and Decorators.
+El significado de la palabra Proxy es "en lugar de" o "en nombre de" que explica directamente el Método Proxy.
+
+Los proxies también se denominan sustitutos, identificadores y envoltorios. Están estrechamente relacionados en estructura, pero no en propósito, con los adaptadores y decoradores.
 
 #### References
 - [Proxy Method – Python Design Patterns](https://www.geeksforgeeks.org/proxy-method-python-design-patterns/)
