@@ -46,5 +46,11 @@ Composite Method is a Structural Design Pattern which describes a group of objec
 
 One of the main advantages of using the Composite Method is that first, it allows you to compose the objects into the Tree Structure and then work with these structures as an individual object or an entity.
 
+### Decorator Method
+Decorator Method is a Structural Design Pattern which allows you to dynamically attach new behaviors to objects without changing their implementation by placing these objects inside the wrapper objects that contains the behaviors.
+
+It is much easier to implement Decorator Method in Python because of its built-in feature. It is not equivalent to the Inheritance because the new feature is added only to that particular object, not to the entire subclass.
+
+
 ## References
 - [Python Design Patterns](https://www.geeksforgeeks.org/python-design-patterns/)
