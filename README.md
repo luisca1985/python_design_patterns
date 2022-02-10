@@ -51,10 +51,6 @@ Básicamente está diseñado para proporcionar flexibilidad a las soluciones a v
 - [Builder Method – Python Design Patterns](https://www.geeksforgeeks.org/builder-method-python-design-patterns/)
 
 ### Prototype Method
-Prototype Method is a Creational Design Pattern which aims to reduce the number of classes used for an application. It allows you to copy existing objects independent of the concrete implementation of their classes. Generally, here the object is created by copying a prototypical instance during run-time.
-
-It is highly recommended to use Prototype Method when the object creation is an expensive task in terms of time and usage of resources and already there exists a similar object. This method provides a way to copy the original object and then modify it according to our needs.
-
 Prototype Method es un patrón de diseño creacional que tiene como objetivo reducir el número de clases utilizadas para una aplicación. Le permite copiar objetos existentes independientemente de la implementación concreta de sus clases. Generalmente, aquí el objeto se crea copiando una instancia prototípica durante el tiempo de ejecución.
 
 Se recomienda utilizar el Prototype Method cuando la creación del objeto es una tarea costosa en términos de tiempo y uso de recursos y ya existe un objeto similar. Este método proporciona una forma de copiar el objeto original y luego modificarlo según nuestras necesidades.
@@ -76,10 +72,6 @@ Los Structural design patterns consisten en organizar diferentes clases y objeto
 También identifica las relaciones que llevaron a la simplificación de la estructura.
 
 ### Adapter Method
-Adapter method is a Structural Design Pattern which helps us in making the incompatible objects adaptable to each other. The Adapter method is one of the easiest methods to understand because we have a lot of real-life examples that show the analogy with it. The main purpose of this method is to create a bridge between two incompatible interfaces. This method provides a different interface for a class. We can more easily understand the concept by thinking about the Cable Adapter that allows us to charge a phone somewhere that has outlets in different shapes.
-
-Using this idea, we can integrate the classes that couldn’t be integrated due to interface incompatibility.
-
 El Adapter Method es un patrón de diseño estructural que nos ayuda a hacer que los objetos incompatibles se adapten entre sí. El método Adapter es uno de los métodos más fáciles de entender porque tenemos muchos ejemplos de la vida real que muestran la analogía con él. El objetivo principal de este método es crear un puente entre dos interfaces incompatibles. 
 
 Este método proporciona una interfaz diferente para una clase. Podemos entender más fácilmente el concepto si pensamos en el Cable Adaptador que nos permite cargar un teléfono en algún lugar que tenga enchufes de diferentes formas.
@@ -114,11 +106,6 @@ Es mucho más fácil implementar el Decorator Method en Python debido a su funci
 - [Decorator Method – Python Design Patterns](https://www.geeksforgeeks.org/decorator-method-python-design-patterns/)
 
 ### Facade Method
-
-Facade Method is a Structural Design pattern that provides a simpler unified interface to a more complex system. The word Facade means the face of a building or particularly an outer lying interface of a complex system, consists of several sub-systems. It is an essential part Gang of Four design patterns. It provides an easier way to access methods of the underlying systems by providing a single entry point.
-
-Here, we create a Facade layer that helps in communicating with subsystems easily to the clients.
-
 El Facade Method es un patrón de diseño estructural que proporciona una interfaz unificada más simple para un sistema más complejo. La palabra Fachada significa la cara de un edificio o, en particular, una interfaz exterior de un sistema complejo, que consta de varios subsistemas. Es una parte esencial de los patrones de diseño de Gang of Four. 
 
 Proporciona una forma más fácil de acceder a los métodos de los sistemas subyacentes al proporcionar un único punto de entrada.
