@@ -14,6 +14,7 @@
     - [Decorator Method](#decorator-method)
     - [Facade Method](#facade-method)
     - [Proxy Method](#proxy-method)
+    - [Flyweight Method](#flyweight-method)
 
 ## Creational Design Pattern
 Los patrones creacionales proporcionan información esencial sobre la creación de instancias de clase o la creación de instancias de objetos.
@@ -127,6 +128,17 @@ Los proxies también se denominan sustitutos, identificadores y envoltorios. Est
 #### References
 - [Proxy Method – Python Design Patterns](https://www.geeksforgeeks.org/proxy-method-python-design-patterns/)
 
+### Flyweight Method
+El Flyweight Method es un patrón de diseño estructural que se enfoca en minimizar la cantidad de objetos que requiere el programa en tiempo de ejecución. 
+
+Básicamente, crea un objeto Flyweight que es compartido por múltiples contextos. Está creado de tal manera que no se puede distinguir entre un objeto y un Objeto Flyweight. 
+
+Una característica importante de los objetos Flyweight es que son inmutables. Esto significa que no se pueden modificar una vez construidos.
+
+Para implementar el método Flyweight en Python, usamos Dictionary que almacena la referencia al objeto que ya se ha creado, cada objeto está asociado con una clave.
+
+#### References
+- [Flyweight Method – Python Design Patterns](https://www.geeksforgeeks.org/flyweight-method-python-design-patterns/)
 
 ## References
 - [Python Design Patterns](https://www.geeksforgeeks.org/python-design-patterns/)
